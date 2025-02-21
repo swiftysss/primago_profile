@@ -1,0 +1,141 @@
+@mixin shapeMain{
+    .custom-shape-divider-bottom-1706162591 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1706162591 svg {
+        position: relative;
+        display: block;
+        width: calc(132% + 1.3px);
+        height: 60px;
+    }
+
+    .custom-shape-divider-bottom-1706162591 .shape-fill {
+        fill: whitesmoke;
+    }
+}
+@mixin shapeVM{
+    .custom-shape-divider-bottom-1706886946 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1706886946 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 1px;
+    }
+
+    .custom-shape-divider-bottom-1706886946 .shape-fill {
+        fill: whitesmoke;
+    }
+}
+@mixin shapeJurusan{
+    .custom-shape-divider-top-1706887577 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .custom-shape-divider-top-1706887577 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 33px;
+    }
+
+    .custom-shape-divider-top-1706887577 .shape-fill {
+        fill: whitesmoke;
+    }
+}
+@mixin shapeEkskul{
+    .custom-shape-divider-top-1708188153 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1708188153 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 49px;
+        transform: rotateY(180deg);
+    }
+    
+    .custom-shape-divider-top-1708188153 .shape-fill {
+        fill: floralwhite;
+    }
+}
+@mixin shapeP2DB{
+    .custom-shape-divider-top-1708001615 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1708001615 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 95px;
+        transform: rotateY(180deg);
+    }
+    
+    .custom-shape-divider-top-1708001615 .shape-fill {
+        fill: #CAFAFF;
+    }
+}
+@mixin underline{
+    height: 0.2%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@mixin box{
+    width: 100%;
+    max-width: 315px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 0.85rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    h5{
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    p{
+        color: #666;
+    }
+}
+@mixin imageCloud{
+    height: 220px;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.2;
+}

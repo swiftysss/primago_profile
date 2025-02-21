@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+body {
+  overflow: auto;
+  overflow-x: hidden;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 100dvw;
+  min-height: 100dvh;
+}
+body header {
+  position: fixed !important;
+  background-color: blue;
+  transition: background-color 0.7s ease;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 76px;
+  padding: 15px 0;
+  padding-right: 1.25%;
+  padding-left: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+body header #textName {
+  margin-left: 12px;
+}
+body header h3 {
+  color: white;
+  font-family: Poppins;
+  margin: 0;
+}
+body header div {
+  background-color: red;
+  padding: 6px;
+  width: 85px;
+  display: flex;
+  justify-content: center;
+  border-radius: 18px;
+  cursor: pointer;
+  right: 0;
+  float: right;
+  margin-right: 3px;
+  margin-left: auto;
+}
+body header div h5 {
+  color: whitesmoke;
+}
+body .modal {
+  position: fixed;
+  z-index: 999999999999999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+body .modal .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 12px;
+  width: -moz-max-content;
+  width: max-content;
+  height: 138px;
+}
+body .modal .modal-content h4 {
+  font-weight: 100;
+  margin-top: 8px;
+}
+body .modal .modal-content #confirmBtn {
+  padding: 4px;
+  width: 80px;
+  background-color: #2CCE00;
+  border: 1px solid #2CCE00;
+  border-radius: 6px;
+  color: white;
+  margin-top: 26px;
+  cursor: pointer;
+  font-size: smaller;
+  right: 0;
+  float: left;
+}
+body .modal .modal-content #cancelBtn {
+  padding: 4px;
+  width: 80px;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 6px;
+  color: white;
+  margin-top: 26px;
+  cursor: pointer;
+  font-size: smaller;
+  right: 0;
+  float: right;
+}
+body .sec-utama {
+  display: flex;
+  justify-content: center;
+}
+body .sec-utama h1 {
+  font-weight: 100;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+@supports (-ms-ime-align: auto) {
+  html {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}

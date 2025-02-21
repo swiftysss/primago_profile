@@ -1,0 +1,19 @@
+@mixin AllEffectCSS(){
+
+    body.scrolled header {
+        background-color: orange;
+    }
+    
+    @keyframes glowAnimation {
+        0% {
+        text-shadow: 0 0 10px rgba(255,0,55,1); /* Outer glow from left */
+        }
+        50% {
+        text-shadow: 0 0 10px rgba(0,187,255,1); /* Outer glow in the middle (adjust as needed) */
+        }
+        100% {
+        text-shadow: 0 0 10px rgba(0,255,98,1); /* Outer glow from right */
+        }
+    }
+
+}
