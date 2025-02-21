@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins);
 body.scrolled header {
-  background-color: orange;
+  background-color: #FF9800  ;
 }
 
 @keyframes glowAnimation {
