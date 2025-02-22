@@ -119,10 +119,23 @@
 
        
             <div style="background-color: #007A7A ; width: 100%; height: 90vh; display: flex; ">
-                <div style=" width: 50%; height: 100vh">
-    
+                <div style=" width: 50%; height: 100vh; display: flex; justify-content: center; align-items: center">
+                    <div style=" width: 400px; height: 60vh">
+                        <div id="rplimg">
+                            <img style="width: 400px; height: 400px" src="{{ asset('image/TRPL.png') }}" alt="">
+                        </div>
+                        <div id="dkvimg" class="d-none">
+                            <img style="width: 400px; height: 400px" src="{{ asset('image/DEKV.png') }}" alt="">
+                        </div>
+                        <div id="tkjimg" class="d-none">
+                            <img style="width: 350px; height: 400px;" src="{{ asset('image/TKJJ.png') }}" alt="">
+                        </div>
+                        <div id="tttimg" class="d-none">
+                            <img style="width: 400px; height: 400px;" src="{{ asset('image/TTT.png') }}" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div style="width: 50%; height: 90vh">
+                <div style="width: 50%; height: 90vh;">
                     <div style="width: 100%; height: 130px; border-bottom-left-radius: 100px;display: flex">
                         <div style="width: 25%; height: 130px; background-color: rgb(0, 154, 154); border-bottom-left-radius: 100px">
                             <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked
@@ -142,11 +155,11 @@
                         <div style="width: 25%; height: 130px; background-color: rgb(30, 74, 74);">
                             <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off"
                             onclick="toggleCard(4)">
-                            <label style="display: flex; justify-content: center; align-items: center;width: 100%; height: 130px; border-bottom-left-radius: 100px; font-size: 30px; font-weight: bold; color: white; cursor: pointer" for="btnradio4">T3</label>
+                            <label style="display: flex; justify-content: center; align-items: center;width: 100%; height: 130px; border-bottom-left-radius: 100px; font-size: 30px; font-weight: bold; color: white; cursor: pointer" for="btnradio4">Telco</label>
                         </div>
                     </div>
 
-                    <div style="width: 100%; display: flex; justify-content: center">
+                    <div style="width: 100%; display: flex; justify-content: center;transition: .5s">
                         <div style="width: 85%; height: auto;">
                             <div style="width: 80%; margin-top: 100px; border: 1px solid white; height: auto; padding: 20px">
 
@@ -501,19 +514,37 @@
 </body>
 <script>
     function toggleCard(option) {
-        document.getElementById("rpl-select").classList.add("d-none");
-        document.getElementById("dkv-select").classList.add("d-none");
-        document.getElementById("tkj-select").classList.add("d-none");
-        document.getElementById("telco-select").classList.add("d-none");
+        var rplimg = document.getElementById('rplimg')
+        var dkvimg = document.getElementById('dkvimg')
+        var tkjimg = document.getElementById('tkjimg')
+        var tttimg = document.getElementById('tttimg')
+
+        var rpl = document.getElementById("rpl-select")
+        var dkv = document.getElementById("dkv-select")
+        var tkj = document.getElementById("tkj-select")
+        var t3 = document.getElementById("telco-select")
+
+        tttimg.classList.add('d-none')
+        dkvimg.classList.add('d-none')
+        rplimg.classList.add('d-none')
+        tkjimg.classList.add('d-none')
+        rpl.classList.add("d-none");
+        dkv.classList.add("d-none");
+        tkj.classList.add("d-none");
+        t3.classList.add("d-none");
 
         if (option === 1) {
-            document.getElementById("rpl-select").classList.remove("d-none");
+            rplimg.classList.remove("d-none");
+            rpl.classList.remove("d-none");
         } else if (option === 2) {
-            document.getElementById("dkv-select").classList.remove("d-none");
+            dkv.classList.remove("d-none");
+            dkvimg.classList.remove("d-none");
         } else if (option === 3) {
-            document.getElementById("tkj-select").classList.remove("d-none");
+            tkj.classList.remove("d-none");
+            tkjimg.classList.remove("d-none");
         } else if (option === 4) {
-            document.getElementById("telco-select").classList.remove("d-none");
+            t3.classList.remove("d-none");
+            tttimg.classList.remove("d-none");
         }
     }
 </script>
