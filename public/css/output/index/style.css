@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins);
 body.scrolled header {
-  background-color: #FF9800  ;
+  background-color: #2C3E50  ;
+  
 }
 
 @keyframes glowAnimation {
@@ -42,7 +43,7 @@ body.scrolled header {
     top: 0;
     left: 0;
     width: 100dvw;
-    height: 76px;
+    height: 90px;
     padding: 15px 0;
     padding-right: 1.25%;
     padding-left: 2%;
@@ -60,6 +61,8 @@ body.scrolled header {
     margin-left: 15.5px;
     transition: 0.3s;
     cursor: pointer;
+    font-family: "Wix Madefor Text", serif;
+    margin-left:50px ;
   }
   body header #imgicon {
     float: left;
@@ -86,11 +89,49 @@ body.scrolled header {
     z-index: 0;
     position: relative;
   }
+  .gtw button:hover {
+    background-color: white !important;
+    color: #2C3E50 !important;
+    transition: 0.3s;
+    border: 1px solid !important
+  }
+  .rpl:hover{
+    background-color: #2C3E50 !important;
+    transition: .5s;
+  }
+  .ERPEEL{
+    animation: fadeInScale .3s ease forwards;
+  }
+  .RPLIMG{
+    animation: fadeInScale .3s ease forwards;
+  }
+  .TELCOIMG,
+  .TKJIMG,
+  .DKVIMG,
+  .DEKAVE,
+  .TEKAJE,
+  .TELCO{
+    display: none;
+    animation: fadeInScale .3s ease forwards;
+  }
+  @keyframes fadeInScale {
+    from{
+      opacity: 0;
+      transform: scale(.8);
+    }
+
+    to{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
   body #home #text1 {
     animation: glowAnimation 8s infinite;
     margin-bottom: 3rem;
     font-size: 3rem;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+    font-family: "Wix Madefor Text", serif;
+    font-weight: 700;
     color: whitesmoke;
     -webkit-text-stroke: 1.38px #000;
     position: absolute;
@@ -317,8 +358,8 @@ body.scrolled header {
   body #ekskul {
     position: relative !important;
     width: 100dvw;
-    height: 110vh;
-    background-color: #CAFAFF;
+    height: 120vh;
+    background-color: #f5f5f5;
     flex-direction: column;
   }
   body #ekskul .custom-shape-divider-top-1708188153 {
@@ -449,7 +490,11 @@ body.scrolled header {
     transform: rotateY(180deg);
   }
   body #p2db .custom-shape-divider-top-1708001615 .shape-fill {
-    fill: #CAFAFF;
+    fill: #F5F5F5;
+  }
+  .balde:hover{
+    transform: scale(1.1) !important;
+  
   }
   body #p2db #img-p2db {
     margin-top: -13px;
